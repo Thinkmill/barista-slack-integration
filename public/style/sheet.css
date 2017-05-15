@@ -1,0 +1,85 @@
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body {
+  background-color: #352924;
+  background-image: url("//i.imgur.com/TFWtO7Br.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 200px 20px rgba(0, 0, 0, 0.9);
+  color: white;
+  margin: 0;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+h1 {
+  font-size: 2.2em;
+  font-weight: 900;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+/* background #352924 */
+/* primary #3E8178 */
+/* secondary #3C4068 */
+
+.hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+/* Layout */
+.container {
+  margin: 0 auto;
+  max-width: 540px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.grid-row {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -.5rem;
+  margin-right: -.5rem;
+}
+.grid-col {
+  box-sizing: border-box;
+  flex: 1 0 0;
+	max-width: 100%;
+  padding-left: .5rem;
+	padding-right: .5rem;
+}
+.grid-col--half {
+  /*flex-basis: 1 1 auto;*/
+}
+
+/* Device */
+.device {
+  background-color: rgba(255, 255, 255, 0.93);
+  border-radius: 30px;
+  box-shadow: 0 0 120px 12px rgba(0, 0, 0, 0.9);
+  padding: 50px 6px;
+}
+.device > img {
+  box-shadow: 0 0 0 1px #ccc;
+}
+
+/* Components */
+.button {
+  background-color: #3E8178;
+  border-radius: 4px;
+  line-height: 2.4;
+  padding: 0 1em;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "barista-slack-integration",
+  "version": "1.0.0",
+  "description": "Slack integration to make coffee orders easy!",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thinkmill/barista-slack-integration.git"
+  },
+  "keywords": [
+    "slack",
+    "barista",
+    "thinkmill"
+  ],
+  "author": "thinkmill",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Thinkmill/barista-slack-integration/issues"
+  },
+  "homepage": "https://github.com/Thinkmill/barista-slack-integration#readme",
+  "dependencies": {
+    "hapi": "^16.1.1",
+    "inert": "^4.2.0"
+  }
+}
