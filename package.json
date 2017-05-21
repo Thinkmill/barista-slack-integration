@@ -4,8 +4,7 @@
   "description": "Slack integration to make coffee orders easy!",
   "main": "src/server.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src/ -d dist/"
   },
   "repository": {
     "type": "git",
@@ -25,5 +24,10 @@
   "dependencies": {
     "hapi": "^16.1.1",
     "inert": "^4.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.46.0"
   }
 }
