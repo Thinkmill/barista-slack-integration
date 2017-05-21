@@ -1,5 +1,6 @@
 const Hapi = require('hapi');
 const Inert = require('inert');
+const path = require('path');
 
 const server = new Hapi.Server();
 server.connection({ port: 3000, host: 'localhost' });
@@ -23,14 +24,14 @@ server.route({
   method: 'GET',
   path: '/style/{file*}',
   handler: {
-  directory: { path: 'public/style' }
+  directory: { path: path.resolve(__dirname, '../public/style') }
   }
 });
 server.route({
   method: 'GET',
   path: '/images/{file*}',
   handler: {
-  directory: { path: 'public/images' }
+  directory: { path: path.resolve(__dirname, '../public/images') }
   }
 });
 
